@@ -1,4 +1,3 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
@@ -11,8 +10,8 @@ def home(request):
 
 
 def about(request):
-    return render(request, 'delete-me/temp.html')
+    return render(request, 'recipes/about.html')
 
 
 def contact(request):
-    return HttpResponse('CONTACT')
+    return render(request, 'recipes/contact.html')
